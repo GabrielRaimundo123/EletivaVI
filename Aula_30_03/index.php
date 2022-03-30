@@ -26,22 +26,23 @@
                     <form action="resposta.php" method="POST">
                         <div class="row">
                             <div class="col">
-                                <label for="email" name="email" id="email" class="form control">
+                                <label for="email" class="label_control">
                                     informe o e-mail
                                 </label>
-                                <input taype="email" name="email" id="senha" class="form control">
+                                <input taype="email" name="email" id="email" class="form control">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <label for="senha" name="senha" class="form control">
+                                <label for="password" class="label_control">
                                     informe a senha
                                 </label>
-                                <input taype="senha" name="email" class="form control">
+                                <input taype="senha" name="senha" id="senha" class="form control">
                             </div>
                         </div>
                     </form>
                 </div>
+                
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
