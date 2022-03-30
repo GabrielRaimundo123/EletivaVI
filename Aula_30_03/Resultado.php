@@ -14,10 +14,32 @@
     <h1>Sistema em php</h1>
 
     <?php
-
-        $emai = $_POST['email'];
-        setcookie("usuario", $email, time() + (86400 * 1), "/");
-        echo "sejam bem vindo". $_COOKIE['usuario'];
+        if ($_post){
+            $emai = $_POST['email'];
+            $emai = $_POST['senha'];
+            /*setcookie("usuario", $email, time() + (86400 * 1), "/");
+            echo "sejam bem vindo". $_COOKIE['usuario'];*/
+            session_start();
+            if(($email == "v@v.com")&& ($senha == "123")){
+                $_SESSION["usuario"] = $email;
+                $_SESSION["senha"] = $senha;
+                $_SESSION["acesso"] = true;
+                echo "bem vindo usuario ".$_SESSION["usuario"];
+                echo '<a href="sair.php>Sair</a>';
+            } else {
+                header("location: index.php");
+                exit;
+            }
+        } else {
+            session_start();
+            if($_SESSION["acesso"] == true){
+                echo "bem vindo usuario ".$_SESSION["usuario"];
+                echo '<a href="sair.php">Sair</a>';
+            } else {
+                header("location: index.php");
+                exit;
+            }
+        }
     ?>
 
 
