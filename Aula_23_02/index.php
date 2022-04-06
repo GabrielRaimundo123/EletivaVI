@@ -17,7 +17,7 @@
           echo "<p>".date('d/m/Y')."</p>"; 
           $umaVariavel = 20;
           $umaVariavel = "Gabriel R";
-          echo 'Meu nome é $umaVariavel';
+          echo 'Igual print.';
           $total = 30 * 10 / 2 - 4 + 1;
           $total++;
           $total--;
