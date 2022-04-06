@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,17 +14,9 @@
     <h1>
       Olá! Hoje é dia  
       <?php 
-          //Comentário
-          #comentário
-          /*
-            Comentário
-          */
           echo "<p>".date('d/m/Y')."</p>"; 
-          //print("Oi");
           $umaVariavel = 20;
-          $umaVariavel = "Vanessa";
-          //echo "Meu nome é:".$umaVariavel;
-          //echo "Meu nome é $umaVariavel";
+          $umaVariavel = "Gabriel R";
           echo 'Meu nome é $umaVariavel';
           $total = 30 * 10 / 2 - 4 + 1;
           $total++;
