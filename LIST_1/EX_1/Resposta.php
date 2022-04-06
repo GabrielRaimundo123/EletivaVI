@@ -18,19 +18,8 @@
       $valor2 = $_POST['valor2'];
       echo "Valor 1 é:  $valor1 e Valor 2 é:  $valor2";
       echo "<br/>";
-      echo "Subtração: ".($valor1 - $valor2);
-      echo $resultado;
-
-      $i = 10;
-
-      echo "<br/>";
-
-      echo "Valor de i:".(3 * ++$i);
-      
-      echo "<br/>";
-
-      echo "Valor de i:".($i);
-
+      echo "Seu toco é de: ".($valor1 - $valor2);
+      $resultado = 10;
 
     ?>
 
