@@ -12,7 +12,7 @@
   </head>
   <body>
     <h1>
-      Olá! Hoje é dia  
+      Olá! Tudo bom
       <?php 
           echo "<p>".date('d/m/Y')."</p>"; 
           $umaVariavel = 20;
