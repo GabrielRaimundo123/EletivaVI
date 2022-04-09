@@ -21,7 +21,7 @@
       $kilo = $valor1 * $valor2;
 
       //*echo "Multiplicação: ".($valor1 * $valor2);   
-      $resultado = 10;   
+      $kilo = 10;   
 
     ?>
 
