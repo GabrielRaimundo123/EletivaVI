@@ -19,8 +19,6 @@
       echo "Valor 1 é:  $valor1 e Valor 2 é:  $valor2";
       echo "<br/>";
       $kilo = $valor1 * $valor2;
-
-      //*echo "Multiplicação: ".($valor1 * $valor2);   
       $kilo = 10;   
 
     ?>
