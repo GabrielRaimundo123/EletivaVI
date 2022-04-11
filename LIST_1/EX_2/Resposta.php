@@ -16,12 +16,10 @@
     <?php
       $valor1 = $_POST['valor1'];
       $valor2 = $_POST['valor2'];
-      echo "Valor 1 é:  $valor1 e Valor 2 é:  $valor2";
-      echo "<br/>";
+
       $kilo = $valor1 * $valor2;
-      echo $kilo;
-      
-      $i = 10;   
+      echo "<br/>";
+      echo "O valor total é $kilo";
 
     ?>
 
