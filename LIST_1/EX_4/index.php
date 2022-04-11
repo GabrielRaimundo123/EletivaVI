@@ -12,7 +12,7 @@
   </head>
   <body class="container">
 
-    <h1> verificação de um valor </h1>
+    <h1> Verificação de valor </h1>
 
     <form method="post" action="Resposta.php">
         <div class="row">
