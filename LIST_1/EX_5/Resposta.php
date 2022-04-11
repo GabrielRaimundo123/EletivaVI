@@ -11,7 +11,7 @@
     <title>Execicio 5</title>
   </head>
   <body>
-    <h1>Calculos</h1>
+    <h1>Notas de aluno </h1>
 
     <?php
       $valor1 = $_POST['valor1'];
@@ -19,7 +19,7 @@
       $valor3 = $_POST['valor3'];
       $valor4 = $_POST['valor4'];
 
-      $media = ($valor1 + $valor2 + $valor3 + $valor4 =) / 4 ;
+      $media = ($valor1 + $valor2 + $valor3 + $valor4) /4;
       echo "Sua média é: $media";
 
       if ($media > 7){
