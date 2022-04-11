@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Kilo</title>
+    <title>Execicio 2</title>
   </head>
   <body>
     <h1>Calculo de kilos</h1>
@@ -19,7 +19,9 @@
       echo "Valor 1 é:  $valor1 e Valor 2 é:  $valor2";
       echo "<br/>";
       $kilo = $valor1 * $valor2;
-      $kilo = 10;   
+      echo $kilo;
+      
+      $i = 10;   
 
     ?>
 

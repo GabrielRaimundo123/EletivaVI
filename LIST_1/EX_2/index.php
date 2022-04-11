@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Formulario de troco</title>
+    <title>Execicio 2</title>
   </head>
   <body class="container">
 
-    <h1> Formulário EX1 </h1>
+    <h1> Valor de kilo </h1>
 
     <form method="post" action="Resposta.php">
         <div class="row">
