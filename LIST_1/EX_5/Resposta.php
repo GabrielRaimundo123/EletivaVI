@@ -16,20 +16,18 @@
     <?php
       $valor1 = $_POST['valor1'];
       $valor2 = $_POST['valor2'];
-      $valor2 = $_POST['valor3'];
-      $valor2 = $_POST['valor4'];
-      $valor2 = $_POST['valor5'];
-      echo "Valor 1 é:  $valor1, Valor 2 é:  $valor2, Valor 3 é: $valor3, Valor 4 é: valor4";
-      echo "<br/>";
-      if ($valor2 != 0){
-         echo "Divisão: ".($valor1 / $valor2);
-      } else {
-        echo "Não é possível realizar divisão por 0!";
+      $valor3 = $_POST['valor3'];
+      $valor4 = $_POST['valor4'];
+
+      $media = ($valor1 + $valor2 + $valor3 + $valor4 =) / 4 ;
+      echo "Sua média é: $media";
+
+      if ($media > 7){
+        echo " Aprovado";
       }
-      echo $resultado;
-
-      $i = 10;
-
+      elseif ($media < 7){
+          echo " Reprovado";
+      }
 
     ?>
 
