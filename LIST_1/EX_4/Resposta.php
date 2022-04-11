@@ -11,26 +11,24 @@
     <title>Execicio 4</title>
   </head>
   <body>
-    <h1>Valor</h1>
+    <h1>Verificação de valor</h1>
 
     <?php
       $valor1 = $_POST['valor1'];
-      echo "Valor 1 é:  $valor1";
-      echo "<br/>";
-      if ($valor1 % 2 == 0)
-        echo "Valor 1 é positivo!";
+
+      if ($valor1 >= 0)
+      {
+        echo "$Valor é positivo!";
+      }
       else 
-        echo "Valor é negativo";
-      elseif
-        echo "Valor é igual a zero";
+      {
+        echo "$Valor é negativo";
+      }
+      if ($valor1 == 0)
+      {
+        echo "$Valor é igual a zero";
+      }
 
-      $resultado = $valor1 % 2 == 0 ? "Valor 1 é par!" 
-                  : "Valor 1 é impar" 
-                  : "valor é igual a zero";
-      echo $resultado;
-
-      $i = 10;
-      
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
