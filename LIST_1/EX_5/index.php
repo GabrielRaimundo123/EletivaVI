@@ -44,13 +44,6 @@
               <input type="number" name="valor2" 
                   id="valor2" class="form-control"/>
             </div>
-            <div class="col">
-            <label for="valor2" class="label-control">
-                Informe a quinta nota:
-              </label>
-              <input type="number" name="valor2" 
-                  id="valor2" class="form-control"/>
-            </div>
         </div>
         <div class="row mt-5">
           <div class="col">
