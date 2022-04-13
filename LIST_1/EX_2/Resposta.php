@@ -20,7 +20,6 @@
       $kilo = $valor1 * $valor2;
       echo "<br/>";
       echo "O valor total é $kilo";
-
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
