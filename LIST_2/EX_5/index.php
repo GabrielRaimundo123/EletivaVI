@@ -11,7 +11,7 @@
     <title>Exercício 5</title>
   </head>
   <body class="container">
-    <h1>Exercício 5</h1>
+    <h1>Ordenar matriz</h1>
 
     <form action="Resposta.php" method="post">
       <div class="row">
