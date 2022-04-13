@@ -18,6 +18,7 @@
         <?php
           for ($i=1; $i<=10; $i++){
         ?>
+
           <div class="col">
             <label for="valor<?= $i ?>" class="label-control">
               Informe o valor <?= $i ?>
@@ -25,6 +26,7 @@
             <input type="number" name="valor<?= $i ?>" 
               id="valor<?= $i ?>" class="form-control"/>
           </div>
+            
         <?php
           }
         ?>
