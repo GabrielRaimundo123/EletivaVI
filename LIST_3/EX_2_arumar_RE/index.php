@@ -16,15 +16,15 @@
     <form action="Resposta.php" method="post">
       <div class="row">
         <?php
-          for ($i=1; $i<=2; $i++){
+          for ($i=1; $i<=5; $i++){
         ?>
 
           <div class="col">
-            <label for="valor<?= $i ?>" class="label-control">
-              Informe o numero <?= $i ?>
+            <label for="nome<?= $i ?>" class="label-control">
+              Informe o nome do aluno <?= $i ?>
             </label>
-            <input type="number" name="valor<?= $i ?>" 
-              id="valor<?= $i ?>" class="form-control"/>
+            <input type="name" name="nome<?= $i ?>" 
+              id="nome<?= $i ?>" class="form-control"/>
           </div>
             
         <?php

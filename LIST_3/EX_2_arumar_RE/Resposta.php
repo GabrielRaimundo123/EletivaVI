@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,37 +10,29 @@
 
     <title>Exercício 5</title>
   </head>
-  <body class="container">
+  <body>
     <h1>Ordenar matriz</h1>
 
-    <form action="Resposta.php" method="post">
-      <div class="row">
-        <?php
-          for ($i=1; $i<=2; $i++){
-        ?>
 
-          <div class="col">
-            <label for="valor<?= $i ?>" class="label-control">
-              Informe o numero <?= $i ?>
-            </label>
-            <input type="number" name="valor<?= $i ?>" 
-              id="valor<?= $i ?>" class="form-control"/>
-          </div>
-            
-        <?php
+    <?php
+
+        for ($i=1; $i<=10; $i++){
+            $array[$i] = $_POST["valor$i"];
+        }
+
+        function ordenar($array)
+        {
+          sort($array);
+          foreach($array as $valor){
+            echo "Posição do Vetor: $valor";
+            echo "<br>";
           }
-        ?>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button class="btn btn-primary">Enviar</button>
-        </div>
-      </div>
-    </form>
-    
-    <!-- Optional JavaScript; choose one of the two! -->
+          
+        }
+        ordenar($array);
+        var_dump($array);
+    ?>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
