@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
   <body class="container">
     <h1>Exercício 5</h1>
 
-    <form action="resposta.php" method="post">
+    <form action="Resposta.php" method="post">
       <div class="row">
         <?php
           for ($i=1; $i<=10; $i++){
@@ -35,6 +35,7 @@
         </div>
       </div>
     </form>
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
