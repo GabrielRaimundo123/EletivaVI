@@ -13,9 +13,7 @@
   <body>
     <h1>Menor numero</h1>
 
-
     <?php
-
         for ($i=1; $i<=2; $i++){
             $array[$i] = $_POST["valor$i"];
         }
@@ -26,8 +24,7 @@
           foreach($array as $valor){
             echo "Posição do Vetor: $valor";
             echo "<br>";
-          }
-          
+          } 
         }
         ordenar($array);
         var_dump($array);
