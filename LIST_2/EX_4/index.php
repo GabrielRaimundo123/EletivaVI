@@ -11,10 +11,11 @@
     <title>Exercicio 4</title>
   </head>
   <body class="container">
-    <h1>Exercicio 4</h1>
+    <h1>Ler 10 numeros reais</h1>
 
     <form action="Resposta.php" method="post">
       <div class="row">
+
         <?php
           for ($i=1; $i<=10; $i++){
         ?>
@@ -25,9 +26,11 @@
             <input type="number" name="valor<?= $i ?>" 
               id="valor<?= $i ?>" class="form-control"/>
           </div>
+
         <?php
           }
         ?>
+        
       </div>
       <div class="row">
         <div class="col">
