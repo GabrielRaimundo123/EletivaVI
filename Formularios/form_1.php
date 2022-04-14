@@ -8,37 +8,82 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Execicio 1</title>
+    <title>Formulario 1</title>
   </head>
-  <body class="container">
+  <body class="container mt-5 p-4 border border-light border-2 rounded">
 
-    <h1> Formulário EX1 </h1>
+    <h1> Formulário 1</h1>
 
-    <form method="post" action="Resposta.php">
-        <div class="row">
-            <div class="col">
-              <label for="valor1" class="label-control">
-                Informe o valor pago:
+    <form>
+        <div class="row mb-3 mt-4">
+            <div class="col-md-4">
+              <label for="First name" class="label-control mb-2">
+              First name
               </label>
-              <input type="number" name="valor1" 
-                  id="valor1" class="form-control"/>
+              <input type="text" class="form-control" placeholder="Mark"
+              id="firstname" name="firstname" required/>
             </div>
-            <div class="col">
-            <label for="valor2" class="label-control">
-                Informe o valor do produto:
+            <div class="col-md-4">
+              <label for="last name" class="label-control mb-2">
+              last name
               </label>
-              <input type="number" name="valor2" 
-                  id="valor2" class="form-control"/>
+              <input type="text" class="form-control" placeholder="Mark"
+              id="firstname" name="firstname" required/>
             </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col">
-              <button type="submit" class="btn btn-danger">
-                Enviar
-              </button>
+            <div class="col-md-4">
+            <label for="username" class="label-control mb-2">
+              Username
+            </label>
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username"
+                id="username" name="username" required/>
+            </div>
           </div>
-        </div>
+      </div> 
+      
+    <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="city" class="label-control mb-2">
+              City
+            </label>
+            <input type="text" class="form-control" placeholder="City"
+              id="city" name="city" required/>
+          </div>
+
+          <div class="col-md-4">
+            <label for="state" class="label-control mb-2">
+              State
+            </label>
+            <select class="form-select" id="state" required>
+              <option selected disabled>Choose...</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="SP">São Paulo</option>                         
+            </select>
+          </div>
+
+          <div class="col-md-2">
+            <label for="zip" class="label-control mb-2">
+              Zip
+            </label>
+            <input type="text" class="form-control" placeholder="Zip"
+              id="zip" name="zip" required/>
+          </div>
+      </div>
+
+      <!--Checkbox & Submit-->
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="checkbox" required>
+        <label class="form-check-label" for="checkbox">Agree to terms and conditions</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit form</button>
     </form>
+
+  </body>
+
+</html>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
