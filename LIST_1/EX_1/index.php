@@ -12,7 +12,7 @@
   </head>
   <body class="container">
 
-    <h1> Formulário EX1 </h1>
+    <h1> EX1 </h1>
 
     <form method="post" action="Resposta.php">
         <div class="row">
