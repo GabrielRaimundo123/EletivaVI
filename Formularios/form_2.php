@@ -1,99 +1,174 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt0br">
+
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Formulário 2</title>
 
-    <title>Formulario 1</title>
+    <style>
+      label{font-weight:700}
+    </style>
   </head>
+
   <body class="container mt-5 p-4 border border-light border-2 rounded">
 
-    <h1> Formulário 1</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <form>
-        <div class="row mb-3 mt-4">
-            <div class="col-md-4">
-              <label for="First name" class="label-control mb-2">
-              First name
-              </label>
-              <input type="text" class="form-control" placeholder="Mark"
-              id="firstname" name="firstname" required/>
-            </div>
-            <div class="col-md-4">
-              <label for="last name" class="label-control mb-2">
-              last name
-              </label>
-              <input type="text" class="form-control" placeholder="Mark"
-              id="firstname" name="firstname" required/>
-            </div>
-            <div class="col-md-4">
-            <label for="username" class="label-control mb-2">
-              Username
-            </label>
-            <div class="input-group">
-              <span class="input-group-text" id="basic-addon1">@</span>
-              <input type="text" class="form-control" placeholder="Username"
-                id="username" name="username" required/>
-            </div>
-          </div>
-      </div> 
-      
-    <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="city" class="label-control mb-2">
-              City
-            </label>
-            <input type="text" class="form-control" placeholder="City"
-              id="city" name="city" required/>
-          </div>
+    <h1>Cadastros</h1>
 
-          <div class="col-md-4">
-            <label for="state" class="label-control mb-2">
-              State
-            </label>
-            <select class="form-select" id="state" required>
-              <option selected disabled>Choose...</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="SP">São Paulo</option>                         
-            </select>
-          </div>
+    
+    <!--PRIMEIRA 
+        lINHA-->
 
-          <div class="col-md-2">
-            <label for="zip" class="label-control mb-2">
-              Zip
-            </label>
-            <input type="text" class="form-control" placeholder="Zip"
-              id="zip" name="zip" required/>
-          </div>
+    <!--Código-->
+    <form class="">
+      <div class="row mt-5">
+        <div class="col-sm-1">
+          <label class="label-control mb-2" for="codigo">
+            Código
+          </label>
+          <input class="form-control" type="text" value="32" aria-label="32" disabled readonly>
+        </div>
+
+        <!--Nome-->
+        <div class="col-md-6">
+          <label class="label-control mb-2" for="nome">
+            Nome
+          </label>
+          <input type="text" class="form-control" placeholder="Nome Completo do Cliente"
+            id="nome" name="nome"/>
+        </div>
+
+         <!--Email--> 
+        <div class="col-md-3">
+          <label class="label-control mb-2" for="e-mail">
+            E-mail
+          </label>
+          <input type="email" class="form-control" placeholder="cliente@dominio.com"
+            id="e-mail" name="e-mail"/>
+        </div>
+
+        <!--CPF-->
+        <div class="col-md-2">
+          <label class="label-control mb-2" for="cpf">
+            CPF
+          </label>
+          <input type="number" class="form-control" placeholder="Só números"
+            id="cpf" name="cpf"/>
+        </div>
       </div>
 
-      <!--Checkbox & Submit-->
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="checkbox" required>
-        <label class="form-check-label" for="checkbox">Agree to terms and conditions</label>
+
+
+      <!--SEGUNDA 
+          LINHA-->
+
+        <!--Celular-->
+      <div class="row mt-3">
+        <div class="col-md-2">
+          <label class="label-control mb-2" for="cel">
+            N° Celular
+          </label>
+          <input type="tel" class="form-control" placeholder="N° do Celular"
+            id="cel" name="cel"/>
+        </div>
+
+        <!--Telefone-->
+        <div class="col-md-2">
+          <label class="label-control mb-2" for="tel">
+            N° Telefone fixo
+          </label>
+          <input type="tel" class="form-control" placeholder="N° Telefone fixo"
+            id="tel" name="tel"/>
+        </div>
+
+        <!--CEP-->
+        <div class="col-md-2">
+          <label class="label-control mb-2" for="cep">
+            CEP
+          </label>
+          <input type="number" class="form-control" placeholder="ex:88308070"
+            id="cep" name="cep"/>
+        </div>
+
+        <!--Log-->
+        <div class="col-md-2">
+          <label class="label-control mb-2" for="log">
+            Logradouro
+          </label>
+          <input type="text" class="form-control" placeholder="ex:Rua 1400,"
+            id="log" name="log"/>
+        </div>
+
+        <!--Num-->
+        <div class="col-md-1">
+          <label class="label-control mb-2" for="num">
+            N°
+          </label>
+          <input type="number" class="form-control" placeholder="N°"
+            id="num" name="num"/>
+        </div>
+
+        <!--Bairro-->
+        <div class="col-md-3">
+          <label class="label-control mb-2" for="bairro">
+            Bairro
+          </label>
+          <input type="text" class="form-control" placeholder="Bairro"
+            id="bairro" name="bairro"/>
+        </div>
       </div>
 
-      <button type="submit" class="btn btn-primary">Submit form</button>
+
+
+      <!--TERCEIRA 
+          LINHA-->
+
+        <!--Cidade-->
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <label class="label-control mb-2" for="cidade">
+            Cidade
+          </label>
+          <input type="text" class="form-control" placeholder="Cidade"
+            id="cidade" name="cidade"/>
+        </div>
+
+        <!--UF-->
+        <div class="col-md-1">
+          <label class="label-control mb-2" for="uf">
+            UF
+          </label>
+          <input type="text" class="form-control" placeholder="UF"
+            id="uf" name="uf"/>
+        </div>
+
+        <!--Status-->
+        <div class="col-md-2">
+          <label class="label-control mb-2" for="status">
+            Status
+          </label>
+          <select class="form-select" id="status" required>
+            <option selected disabled>Selecione</option>
+            <option value="s">Solteiro(a)</option>
+            <option value="c">Casado(a)</option>
+            <option value="v">Divorciado(a)</option> 
+            <option value="v">Viúvo(a)</option>                         
+          </select>
+        </div>        
+      </div>
+    
+
+
+      <!--RESETAR 
+          E PRÓXIMO-->
+      <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end">
+        <button type="reset" class="btn btn-danger">Resetar</button>
+        <button type="submit" class="btn btn-success">Próximo</button>
+      </div>
     </form>
-
-  </body>
-
-</html>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
