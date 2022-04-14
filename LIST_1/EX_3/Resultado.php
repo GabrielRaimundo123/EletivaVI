@@ -15,19 +15,26 @@
 
     <?php
       $valor1 = $_POST['valor1'];
-      echo "Valor 1 é:  $valor1";
-      echo "<br/>";
-      if ($valor1 >= 0)
-        echo "Valor é maior que 10";
-      else 
-        echo "Valor é menor que 10";
 
+      if ($valor1 >= 0)
+      {
+        echo "Valor é maior que 10";
+      }
+      else 
+      {
+        echo "Valor é menor que 10";
+      }
+      if ($valor == 10)
+      {
+        echo "Seu valor é 10";
+      }
+        
       $resultado = $valor1 >= 0 ? "Valor 1 é maior que 10!" 
                   : "Valor 1 é menor que 10";
+                  
       echo $resultado;
 
-      $i = 10;
-      
+
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
