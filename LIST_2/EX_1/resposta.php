@@ -8,31 +8,44 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Exercício 1</title>
+    <title>Hello, world!</title>
   </head>
-  <body class="container">
-    <h1>Resposta Exercício 1</h1>
+  <body>
+    <h1>Cálculos</h1>
 
     <?php
+      $valor1 = $_POST['valor1'];
+      $valor2 = $_POST['valor2'];
+      echo "Valor 1 é:  $valor1 e Valor 2 é:  $valor2";
+      echo "<br/>";
+      echo "Soma: ".($valor1 + $valor2);
+      echo "Subtração: ".($valor1 - $valor2);
+      echo "Multiplicação: ".($valor1 * $valor2);
+      if ($valor2 != 0){
+         echo "Divisão: ".($valor1 / $valor2);
+      } else {
+        echo "Não é possível realizar divisão por 0!";
+      }
+      if ($valor1 % 2 == 0)
+        echo "Valor 1 é par!";
+      else 
+        echo "Valor é impar1";
 
-        for ($i=1; $i<=10; $i++){
-            $vetor[$i] = $_POST["valor$i"];
-        }
+      $resultado = $valor1 % 2 == 0 ? "Valor 1 é par!" 
+                  : "Valor 1 é impar";
+      echo $Resposta;
 
-        $posicao = 0;
-        $maior = 0;
-        foreach($vetor as $chave => $valor){
-            echo "Posição do Vetor: $chave e seu valor é $valor";
-            echo "<br>";
-            if ($valor > $maior){
-                $maior = $valor;
-                $posicao = $chave;
-            }
-        }
+      $i = 10;
 
-        echo "O maior valor é $maior e está na posição $posicao";
+      echo "<br/>";
 
-e está na posição $posicao";
+      echo "Valor de i:".(3 * ++$i);
+      
+      echo "<br/>";
+
+      echo "Valor de i:".($i);
+
+
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
