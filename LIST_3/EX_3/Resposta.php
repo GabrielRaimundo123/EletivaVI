@@ -14,20 +14,17 @@
     <h1>Menor numero</h1>
 
     <?php
-        for ($i=1; $i<=2; $i++){
-            $array[$i] = $_POST["valor$i"];
-        }
+    $valor1 = $_POST['valor1'];
+    $valor2 = $_POST['valor2'];
 
-        function ordenar($array)
-        {
-          sort($array);
-          foreach($array as $valor){
-            echo "Posição do Vetor: $valor";
-            echo "<br>";
-          } 
-        }
-        ordenar($array);
-        var_dump($array);
+    echo "Os valores informados são: $valor1 e $valor2 ";
+
+    if ($valor1 < $valor2){
+      echo "O menor valor é: $valor1 ";
+    }
+    else{
+      echo "O menor valor é: $valor2 ";
+    }
     ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
