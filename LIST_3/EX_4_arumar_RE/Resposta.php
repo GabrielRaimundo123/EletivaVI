@@ -14,21 +14,29 @@
     <h1>Menor numero</h1>
 
     <?php
-        for ($i=1; $i<=2; $i++){
-            $array[$i] = $_POST["valor$i"];
-        }
-        function ordenar($array)
-        {
-          sort($array);
-          foreach($array as $valor){
-            echo "Posição do Vetor: $valor";
+    
+    $valor = 0;
+    function soma($valor){
+      $soma = 0;
+      for ($i= 1; $i< $valor); $i++){
+        if($valor % $i == 0){
+        $soma += $i;    
+      } 
+    }
+    return $soma;
+  }
+    for ($i=1; $i<=5; $i++){
+          $vetor[$i] = $_POST["valor$i"];
+            echo soma($vetor[$i]);
             echo "<br>";
-          } 
         }
-        ordenar($array);
-        var_dump($array);
+
     ?>
 
+
+<?php
+
+?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
