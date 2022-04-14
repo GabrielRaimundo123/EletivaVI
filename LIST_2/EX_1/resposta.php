@@ -32,6 +32,7 @@
 
         echo "O maior valor é $maior e está na posição $posicao";
 
+e está na posição $posicao";
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
