@@ -1,0 +1,15 @@
+{
+    "name": "aluno/projeto-php",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\ProjetoPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gabriel Raimundo",
+            "email": "gabriel.souza103@Fatec.sp.gov.br"
+        }
+    ],
+    "require": {}
+}
