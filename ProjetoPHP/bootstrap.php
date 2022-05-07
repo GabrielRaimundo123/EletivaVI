@@ -5,7 +5,7 @@
     //Aqui a gente recura oque o usuario digitoi e quaal
     //método http ele utilizou
     $method = $_SERVER['REQUEST_METHOD'];
-    $path = $_SERVER['PATH_INFO '];
+    $path = $_SERVER['PATH_INFO'];
 
     //iNSTANCIAR CLASSES Router
     $router = new \Aluno\ProjetoPhp\Router($method, $path);
