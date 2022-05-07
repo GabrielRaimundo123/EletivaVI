@@ -1,5 +1,7 @@
 <?php
 
+use Aluno\ProjetoPhp\Controller\ExercicioController;
+
     require_once __DIR__."/vendor/autoload.php";
 
     //Aqui a gente recura oque o usuario digitoi e quaal
@@ -14,6 +16,11 @@
     $router->get("/ola-mundo", function(){
         return "Ola mundo!";
     });
+    $router->get("/exemplo",
+     'Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
+
+    $router->post("/exibir-resultado",
+     'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
 
     //Adicionar a rotas validas acima!!!!!!
 
