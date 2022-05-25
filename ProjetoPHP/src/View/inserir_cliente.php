@@ -11,6 +11,7 @@
     <title>Inserir Cliente</title>
   </head>
   <body>
+      <div class="container">
     <h1>Inserir Cliente</h1>
 
     <form action="/cliente/inserir" method="post">
@@ -47,6 +48,7 @@
         </div>
 
     </form>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
