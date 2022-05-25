@@ -1,36 +1,41 @@
 <?php
 
-use Aluno\ProjetoPhp\Controller\ExercicioController;
+require_once __DIR__.'/vendor/autoload.php';
 
-    require_once __DIR__."/vendor/autoload.php";
+//Aqui a gente recupera o que o usuário digitou e qual 
+//método HTTP ele utilizou
+$method = $_SERVER['REQUEST_METHOD'];
+$path = $_SERVER['PATH_INFO'];
 
-    //Aqui a gente recura oque o usuario digitoi e quaal
-    //método http ele utilizou
-    $method = $_SERVER['REQUEST_METHOD'];
-    $path = $_SERVER['PATH_INFO'];
+//Instanciar classe Router
+$router = new \Aluno\ProjetoPhp\Router($method, $path);
 
-    //iNSTANCIAR CLASSES Router
-    $router = new \Aluno\ProjetoPhp\Router($method, $path);
+//ADICIONAR AS ROTAS VÁLIDAS ABAIXO
 
-    //Adicionar as rotas validas abaixo!!!!!
-    $router->get("/ola-mundo", function(){
-        return "Ola mundo!";
-    });
-    $router->get("/exemplo",
-     'Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
+$router->get('/ola-mundo', function(){
+    return "Olá Mundo!";
+});
 
-    $router->post("/exibir-resultado",
-     'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
+$router->get('/exemplo', 
+        'Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
-    //Adicionar a rotas validas acima!!!!!!
+$router->post('/exemplo-resultado',
+        'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
 
-    $result = $router->handler();
+$router->get('/cliente/novo',
+'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
 
-    if(!$result){
-        Http_response_code(404);
-        echo "Pagina não encontrada";
-        die();
-    }
+$router->post('/cliente/inserir',
+'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
 
-    echo $result($router->getParams());
-    
+//ADICIONAR AS ROTAS VÁLIDAS ACIMA
+
+$result = $router->handler();
+
+if (!$result){
+    http_response_code(404);
+    echo "Página não encontrada";
+    die();
+}
+
+echo $result($router->getParams());
