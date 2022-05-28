@@ -10,8 +10,9 @@ class ClientesController{
     public static function abrirFormularioInserir(){
         require_once "../src/View/inserir_cliente.php";
     }
+
     public static function abrirListaClientes(){
-        require_once "../src/View/inserir_cliente.php";
+        require_once "../src/View/listar_clientes.php";
     }
 
     public static function inserirCliente(){
@@ -22,11 +23,10 @@ class ClientesController{
         $dao = new ClientesDAO();
         if ($dao->inserir($cliente)){
             $resposta = true;
-            
         } else {
             $resposta = false;
         }
-        require_once "../src/View/Listar_cliente"
+        require_once "../src/View/listar_clientes.php";
     }
 
 }

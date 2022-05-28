@@ -28,6 +28,9 @@ $router->get('/cliente/novo',
 $router->post('/cliente/inserir',
 'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
 
+$router->get('/clientes',
+'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
+
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 
 $result = $router->handler();
