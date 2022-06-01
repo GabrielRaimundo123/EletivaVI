@@ -8,55 +8,53 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Inserir Cliente</title>
+    <title>Clientes</title>
   </head>
   <body>
-      <?php require_once "barra_navegacao.php"; ?>
-      <div class="container">
-      <h1>Clientes</h1>
+    <?php require_once "barra_navegacao.php"; ?>
+    <div class="container">
+        <h1>Clientes</h1>
 
-      <?php
-        if (isset($resposta)){
-          if ($resposta){
-            echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                    Registro inserido com sucesso!
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>';
-          } else {
-              echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                      Erro ao inserir o registro!
-                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                  </div>';
-          }
-        }
-      ?>
+        <?php
+            if (isset($resposta)){
+                if ($resposta){
+                    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                            Registro inserido com sucesso!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
+                } else {
+                    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            Erro ao inserir o registro!
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>';
+                }
+            }
+        ?> 
 
-
-
-      <table class="table table-hover">
-          <thead>
-              <tr>
-              <th scope="col">#</th>
-              <th scope="col">Nome</th>
-              <th scope="col">E-mail</th>
-              <th scope="col">Ações</th>
-              </tr>
-          </thead>
-          <tbody>
-            <?php while($linha = $resultado ->fetch(PDO::FETCH_ASSOC)){ ?>
+        <table class="table table-hover">
+            <thead>
                 <tr>
-                <th scope="row"><?= $linha['id'] ?></th>
-                <td><?= $linha['nome'] ?> </td>
-                <td><?= $linha['E-mail'] ?> </td>
-                <td> <a href="/cliente/alterar/<?= $linha['id']  ?>"
-                        class="btn btn-warning">Alterar</a> 
-                     <a href="/cliente/alterar/<?= $linha['id']  ?>"
-                         class="btn btn-danger">Excluir</a> </td>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Ações</th>
                 </tr>
-            <?php } ?>
-              
-          </tbody>
-          </table>
+            </thead>
+            <tbody>
+                <?php while($linha = $resultado->fetch(PDO::FETCH_ASSOC)){ ?>
+                    <tr>
+                        <th scope="row"><?= $linha['id'] ?></th>
+                        <td><?= $linha['nome'] ?></td>
+                        <td><?= $linha['email'] ?></td>
+                        <td> <a href="/cliente/alterar/<?= $linha['id'] ?>"
+                                class="btn btn-warning">Alterar</a> 
+                             <a href="/cliente/excluir/<?= $linha['id'] ?>"
+                                class="btn btn-danger">Excluir</a>
+                        </td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+            </table>
 
     </div>
     <!-- Optional JavaScript; choose one of the two! -->

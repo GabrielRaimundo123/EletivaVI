@@ -31,6 +31,15 @@ $router->post('/cliente/inserir',
 $router->get('/clientes',
 'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
 
+$router->get('/cliente/alterar/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioAlterar');
+
+$router->post('/cliente/editar/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::editarCliente');
+
+$router->get('/cliente/excluir/{id}',
+'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
+
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 
 $result = $router->handler();
