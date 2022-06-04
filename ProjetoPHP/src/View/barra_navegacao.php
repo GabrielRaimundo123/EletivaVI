@@ -17,11 +17,11 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/cliente">
+          <a class="nav-link active" aria-current="page" href="/produtos">
               Listar produtos
           </a>
           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/cliente/novo">
+          <a class="nav-link active" aria-current="page" href="/produto/novo">
               Novo produto
           </a>
         </li>
