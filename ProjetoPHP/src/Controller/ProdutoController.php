@@ -5,7 +5,7 @@ namespace Aluno\ProjetoPhp\Controller;
 use Aluno\ProjetoPhp\Model\DAO\ProdutosDAO;
 use Aluno\ProjetoPhp\Model\Entity\produtos;
 
-class ProdutosController{
+class ProdutoController{
 
     //private ProdutosDAO $dao;
 
@@ -36,7 +36,7 @@ class ProdutosController{
         } else {
             $resposta = false;
         }
-        ProdutosController::abrirListaProdutos();
+        ProdutoController::abrirListaProdutos();
     }
 
     public static function editarProdutos($params){
@@ -51,7 +51,7 @@ class ProdutosController{
         } else {
             $resposta = false;
         }
-        ProdutosController::abrirListaProdutos();
+        ProdutoController::abrirListaProdutos();
     }
 
     public static function excluirProdutos($params){
@@ -61,7 +61,7 @@ class ProdutosController{
         } else {
             $resposta = false;
         }
-        ProdutosController::abrirListaProdutos();
+        ProdutoController::abrirListaProdutos();
     }
 
 }

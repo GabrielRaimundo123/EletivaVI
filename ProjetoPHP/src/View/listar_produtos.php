@@ -8,12 +8,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>produtos</title>
+    <title>Produtos</title>
   </head>
   <body>
     <?php require_once "barra_navegacao.php"; ?>
     <div class="container">
-        <h1>produtos</h1>
+        <h1>Produtos</h1>
 
         <?php
             if (isset($resposta)){
@@ -47,9 +47,9 @@
                         <td><?= $linha['nome'] ?></td>
                         <td><?= $linha['descricao'] ?></td>
                         <td><?= $linha['valor'] ?></td>
-                        <td> <a href="/cliente/alterar/<?= $linha['id'] ?>"
+                        <td> <a href="/produto/alterar/<?= $linha['id'] ?>"
                                 class="btn btn-warning">Alterar</a> 
-                             <a href="/cliente/excluir/<?= $linha['id'] ?>"
+                             <a href="/produto/excluir/<?= $linha['id'] ?>"
                                 class="btn btn-danger">Excluir</a>
                         </td>
                     </tr>

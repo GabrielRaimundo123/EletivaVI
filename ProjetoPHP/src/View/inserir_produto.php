@@ -22,21 +22,21 @@
                         Informe o nome:
                     </label>
                     <input type="text" class="form-control"
-                    name="nome" id="nome" value="<?= $resultado['nome'] ?>"/>
+                    name="nome" id="nome" value=""/>
                 </div>
                 <div class="col-5">
                     <label for="descricao" class="label-control">
                         Informe o descricao:
                     </label>
                     <input type="text" class="form-control"
-                    name="descricao" id="descricao" value="<?= $resultado['decricao'] ?>"/>
+                    name="descricao" id="descricao" value=""/>
                 </div>
                 <div class="col-2">
                     <label for="valor" class="label-control">
                         Informe a valor:
                     </label>
                     <input type="number" class="form-control"
-                            name="valor" id="valor" value="<?= $resultado['valor'] ?>"/>
+                            name="valor" id="valor" value=""/>
                 </div>
             </div>
             <div class="row">
