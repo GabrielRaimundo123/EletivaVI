@@ -8,7 +8,7 @@ class ProdutosDAO{
 
     public function inserir(Produtos $a){
         try{
-            $sql = "INSERT INTO `produto`(`nome`, `descricao` , `valor`) VALUES (:nome, :descricao, :valor)";
+            $sql = "INSERT INTO `produtos`(`nome`, `descricao` , `valor`) VALUES (:nome, :descricao, :valor)";
             $p = Conexao::conectar()->prepare($sql);
             $p->bindValue(":nome", $a->getNome());
             $p->bindValue(":descricao", $a->getdescricao());
@@ -46,7 +46,7 @@ class ProdutosDAO{
 
     public function consultar(){
         try{
-            $sql = "SELECT * FROM prdutos";
+            $sql = "SELECT * FROM produtos";
             return Conexao::conectar()->query($sql);
         } catch(\Exception $e){
             return false;
