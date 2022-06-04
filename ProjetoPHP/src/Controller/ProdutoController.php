@@ -36,22 +36,22 @@ class ProdutosController{
         } else {
             $resposta = false;
         }
-        ClientesController::abrirListaProdutos();
+        ProdutosController::abrirListaProdutos();
     }
 
     public static function editarProdutos($params){
-        $cliente = new Produtos();
-        $cliente->setValor($_POST['valor']);
-        $cliente->setDescricao($_POST['descricao']);
-        $cliente->setNome($_POST['nome']);
-        $cliente->setId($params[1]);
+        $produto = new Produtos();
+        $produto->setValor($_POST['valor']);
+        $produto->setDescricao($_POST['descricao']);
+        $produto->setNome($_POST['nome']);
+        $produto->setId($params[1]);
         $dao = new ProdutosDAO();
-        if ($dao->alterar($Produto)){
+        if ($dao->alterar($produto)){
             $resposta = true;
         } else {
             $resposta = false;
         }
-        ClientesController::abrirListaProdutos();
+        ProdutosController::abrirListaProdutos();
     }
 
     public static function excluirProdutos($params){
@@ -61,7 +61,7 @@ class ProdutosController{
         } else {
             $resposta = false;
         }
-        ClientesController::abrirListaProdutos();
+        ProdutosController::abrirListaProdutos();
     }
 
 }
